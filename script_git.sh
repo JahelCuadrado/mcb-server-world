@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-git pull
+cd "$(dirname "$0")"
 
+git pull
 git add .
 
 DATE=$(date)
-
-git commit -m "change made on $DATE"
+git commit -m "Mundo guardado en $DATE"
 
 git push
+
+
